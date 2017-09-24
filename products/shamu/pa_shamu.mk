@@ -15,9 +15,6 @@
 # Check for target product
 ifeq (pa_shamu,$(TARGET_PRODUCT))
 
-# Use AOSP Camera Application
-TARGET_USES_AOSP_CAMERA := true
-
 # Use the AOSP stack
 TARGET_USES_AOSP := true
 
@@ -36,8 +33,8 @@ PRODUCT_MODEL := Nexus 6
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=shamu \
-    BUILD_FINGERPRINT=google/shamu/shamu:7.1.1/N8I11B/4171878:user/release-keys \
-    PRIVATE_BUILD_DESC="shamu-user 7.1.1 N8I11B 4171878 release-keys"
+    BUILD_FINGERPRINT=google/shamu/shamu:7.1.1/NGI55D/4298276:user/release-keys \
+    PRIVATE_BUILD_DESC="shamu-user 7.1.1 NGI55D 4298276 release-keys"
 
 # Paranoid Android platform
 include vendor/pa/main.mk

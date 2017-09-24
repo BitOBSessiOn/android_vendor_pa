@@ -17,9 +17,6 @@ ifeq (pa_bullhead,$(TARGET_PRODUCT))
 # We have our own power HAL
 TARGET_USES_DEVICE_SPECIFIC_POWERHAL := true
 
-# Use AOSP Camera Application
-TARGET_USES_AOSP_CAMERA := true
-
 $(call inherit-product, device/lge/bullhead/aosp_bullhead.mk)
 
 # Generic CAF packages
@@ -41,8 +38,8 @@ PRODUCT_MANUFACTURER := LGE
 PRODUCT_RESTRICT_VENDOR_FILES := false
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=bullhead \
-    BUILD_FINGERPRINT=google/bullhead/bullhead:7.1.2/N2G47Z/4045513:user/release-keys \
-    PRIVATE_BUILD_DESC="bullhead-user 7.1.2 N2G47Z 4045513 release-keys"
+    BUILD_FINGERPRINT=google/bullhead/bullhead:7.1.2/N2G48C/4104010:user/release-keys \
+    PRIVATE_BUILD_DESC="bullhead-user 7.1.2 N2G48C 4104010 release-keys"
 
 # Paranoid Android platform
 include vendor/pa/main.mk
